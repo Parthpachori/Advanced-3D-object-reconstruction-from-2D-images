@@ -1,6 +1,6 @@
-3D Reconstruction from Single Image
+#3D Reconstruction from Single Image
 
-Project Description:-
+#Project Description:-
 
 This project demonstrates a basic framework for reconstructing a 3D mesh from a single 2D image using a deep learning model implemented with PyTorch and PyTorch3D.
 Features.
@@ -12,7 +12,7 @@ Visualize the reconstructed 3D mesh from multiple viewpoints using PyTorch3D's r
 Save the reconstructed mesh to an OBJ file format.
 Display the reconstructed mesh interactively using trimesh and pyglet.
 
-Requirements:-
+#Requirements:-
 
 torch==2.0.1+cu118
 torchvision==0.15.2+cu118
@@ -23,7 +23,7 @@ scikit-image
 trimesh
 pyglet
 
-Installation:-
+#Installation:-
 
 Clone this repository (if applicable, otherwise skip this step).
 Install the required libraries using pip:!pip install torch==2.0.1+cu118 torchvision==0.15.2+cu118 --extra-index-url https://download.pytorch.org/whl/cu118
@@ -31,7 +31,7 @@ Install the required libraries using pip:!pip install torch==2.0.1+cu118 torchvi
 !pip install requests matplotlib scikit-image trimesh pyglet
 Note: The specific PyTorch and PyTorch3D versions are crucial for compatibility.
 
-Usage:-
+#Usage:-
 
 Ensure you have the required libraries installed.
 Make sure you have a trained model saved as model.pth in a directory named models in the same directory as your notebook or script, or modify the code to point to your model file.
@@ -50,8 +50,7 @@ html = mesh.show(background=(255,255,255))
 display(HTML(html.data))
 
 
-Example:-
-# Example image URL
+# Example image URL:-
 image_url = "https://pngimg.com/uploads/circle/circle_PNG75.png"
 
 # Run reconstruction:-
@@ -67,6 +66,6 @@ mesh = trimesh.load('output.obj')
 html = mesh.show(background=(255,255,255))
 display(HTML(html.data))
 
-Evaluation:-
+#Evaluation:-
 
 The primary method of evaluation is visual inspection of the reconstructed 3D mesh. The visualize_mesh function renders the mesh from different angles, allowing you to assess the quality and accuracy of the reconstruction. Additionally, you can examine the generated output.obj file in a 3D viewer to further evaluate the mesh structure and vertex positions.
