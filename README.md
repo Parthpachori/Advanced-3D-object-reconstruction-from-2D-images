@@ -1,5 +1,7 @@
 3D Reconstruction from Single Image
+
 Project Description:-
+
 This project demonstrates a basic framework for reconstructing a 3D mesh from a single 2D image using a deep learning model implemented with PyTorch and PyTorch3D.
 Features.
 
